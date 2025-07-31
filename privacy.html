@@ -3,55 +3,340 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Privacy Policy for CurioCity">
-    <title>Privacy Policy - CurioCity</title>
-    <link rel="stylesheet" href="style.css"> <!-- Optional: add CSS file for styling -->
+    <title>CurioCity - Privacy Policy</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #374151;
+            background-color: #ffffff;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin-bottom: 40px;
+            border-radius: 16px;
+        }
+
+        .header .icon {
+            font-size: 64px;
+            margin-bottom: 16px;
+            opacity: 0.9;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .header .subtitle {
+            font-size: 1.125rem;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .section {
+            background: #f9fafb;
+            margin-bottom: 32px;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e5e7eb;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-title .material-icons {
+            color: #667eea;
+            font-size: 24px;
+        }
+
+        .body-text {
+            font-size: 1rem;
+            color: #6b7280;
+            line-height: 1.75;
+            margin-bottom: 16px;
+        }
+
+        .bullet-text {
+            font-size: 1rem;
+            color: #6b7280;
+            line-height: 1.75;
+            margin-bottom: 8px;
+            margin-left: 20px;
+            position: relative;
+        }
+
+        .bullet-text::before {
+            content: '•';
+            color: #667eea;
+            font-weight: bold;
+            position: absolute;
+            left: -16px;
+        }
+
+        .contact-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #667eea;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 16px;
+            transition: background-color 0.2s;
+        }
+
+        .contact-button:hover {
+            background: #5a67d8;
+        }
+
+        .delete-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #ef4444;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 16px;
+            transition: background-color 0.2s;
+        }
+
+        .delete-button:hover {
+            background: #dc2626;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 32px 20px;
+            color: #9ca3af;
+            font-size: 0.875rem;
+            border-top: 1px solid #e5e7eb;
+            margin-top: 40px;
+        }
+
+        .highlight-box {
+            background: #eff6ff;
+            border: 1px solid #3b82f6;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .highlight-box .material-icons {
+            color: #3b82f6;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 24px;
+                margin-bottom: 24px;
+            }
+
+            .section-title {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Privacy Policy for CurioCity</h1>
-        <p><strong>Effective Date:</strong> June 8, 2025</p>
-    </header>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="material-icons icon">privacy_tip</div>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">Your privacy and data security are important to us.</p>
+        </div>
 
-    <section>
-        <p>At <strong>CurioCity</strong>, your privacy is important to us. This Privacy Policy explains how we collect, use, and protect the personal information you provide when you use our mobile game. By using the app, you agree to the practices outlined in this policy.</p>
+        <!-- Data Collection -->
+        <div class="section">
+            <h2 class="section-title">
+                <span class="material-icons">inventory</span>
+                Data We Collect
+            </h2>
+            <p class="body-text">
+                CurioCity collects the following information to provide our services:
+            </p>
+            <div class="bullet-text">Account information (email, display name)</div>
+            <div class="bullet-text">Location data for tour recommendations</div>
+            <div class="bullet-text">Tours you create and participate in</div>
+            <div class="bullet-text">App usage and preferences</div>
+            <div class="bullet-text">Device information for app optimization</div>
+            <div class="bullet-text">Advertising identifiers and device data for personalized ads</div>
+            <div class="bullet-text">App interactions and crash logs for advertising analytics</div>
+        </div>
 
-        <h2>1. Information We Collect</h2>
-        <p>When you sign in to <strong>CurioCity</strong> via your Google Play account, we collect basic information associated with your Google account, which may include:</p>
-        <ul>
-            <li>Name</li>
-            <li>Email Address</li>
-            <li>Google Account ID</li>
-        </ul>
-        <p>We only store your Name, Email Address, and Google Account ID and do not collect any other personal data.</p>
+        <!-- Advertising and Analytics -->
+        <div class="section">
+            <h2 class="section-title">
+                <span class="material-icons">ads_click</span>
+                Advertising and Analytics
+            </h2>
+            <p class="body-text">
+                CurioCity displays ads through Google AdMob to support free app usage. Our advertising partners collect data to provide personalized ads:
+            </p>
+            <div class="bullet-text">Advertising ID (IDFA on iOS, GAID on Android)</div>
+            <div class="bullet-text">Device information (model, OS version, screen size)</div>
+            <div class="bullet-text">IP address and approximate location</div>
+            <div class="bullet-text">App usage patterns and ad interactions</div>
+            <div class="bullet-text">Crash reports and performance data</div>
+            <div class="highlight-box">
+                <span class="material-icons">info</span>
+                <strong>Opt-out Available:</strong> You can opt out of personalized advertising in your device settings or through ad preferences.
+            </div>
+        </div>
 
-        <h2>2. How We Use Your Information</h2>
-        <p>The information we collect is used solely for the purpose of:</p>
-        <ul>
-            <li>Identifying you within the app and displaying your username and profile</li>
-            <li>Sending you relevant updates, notifications, or information regarding the game (if applicable)</li>
-        </ul>
-        <p>We do not use your personal information for any advertising, marketing, or any other purpose beyond what is necessary to run the app.</p>
+        <!-- Data Security -->
+        <div class="section">
+            <h2 class="section-title">
+                <span class="material-icons">security</span>
+                Data Security
+            </h2>
+            <p class="body-text">
+                All data transmitted between your device and our servers is encrypted in transit using industry-standard HTTPS/TLS encryption. Your account data is securely stored using Firebase's enterprise-grade security infrastructure.
+            </p>
+        </div>
 
-        <h2>3. Data Retention</h2>
-        <p>We retain your information as long as necessary to provide the services within the game. If you choose to delete your account or uninstall the app, your data will no longer be stored on our systems.</p>
+        <!-- Data Usage -->
+        <div class="section">
+            <h2 class="section-title">
+                <span class="material-icons">trending_up</span>
+                How We Use Your Data
+            </h2>
+            <div class="bullet-text">Provide personalized tour recommendations</div>
+            <div class="bullet-text">Enable group tour coordination features</div>
+            <div class="bullet-text">Improve app performance and user experience</div>
+            <div class="bullet-text">Display relevant advertisements to support free app usage</div>
+            <div class="bullet-text">Analyze app usage for advertising optimization</div>
+            <div class="bullet-text">Provide customer support when needed</div>
+            <div class="bullet-text">Comply with legal requirements</div>
+        </div>
 
-        <h2>4. Data Security</h2>
-        <p>We take the security of your personal information seriously. We use industry-standard security measures to protect the information we collect. However, please be aware that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to protect your personal information, we cannot guarantee its absolute security.</p>
+        <!-- Data Sharing -->
+        <div class="section">
+            <h2 class="section-title">
+                <span class="material-icons">share</span>
+                Data Sharing
+            </h2>
+            <p class="body-text">
+                We do not sell, trade, or rent your personal information to third parties. Data may only be shared with:
+            </p>
+            <div class="bullet-text">Service providers (Firebase, Google services) under strict privacy agreements</div>
+            <div class="bullet-text">Advertising partners (Google AdMob, ad networks) for personalized advertising</div>
+            <div class="bullet-text">Analytics providers for app performance and crash reporting</div>
+            <div class="bullet-text">Legal authorities when required by law</div>
+            <div class="bullet-text">Other users only for data you explicitly choose to share (tour groups, public tours)</div>
+            <p class="body-text">
+                For advertising, we share device identifiers and usage data with Google AdMob and their advertising partners. This data is used to display relevant ads and measure ad performance. You can learn more about Google's advertising practices at <a href="https://policies.google.com/privacy" target="_blank" style="color: #667eea;">policies.google.com/privacy</a>.
+            </p>
+        </div>
 
-        <h2>5. Sharing Your Information</h2>
-        <p>We do not share, sell, or rent your personal information to third parties. The only time we may disclose your information is if required by law or if we believe such action is necessary to protect our rights, comply with a judicial proceeding, court order, or legal process.</p>
+        <!-- Third-Party Services -->
+        <div class="section">
+            <h2 class="section-title">
+                <span class="material-icons">extension</span>
+                Third-Party Services
+            </h2>
+            <p class="body-text">
+                CurioCity uses the following third-party services that may collect data:
+            </p>
+            <div class="bullet-text">Google AdMob - for advertising and ad analytics</div>
+            <div class="bullet-text">Google Firebase - for app functionality and analytics</div>
+            <div class="bullet-text">Google Places API - for location services</div>
+            <div class="bullet-text">RevenueCat - for subscription management</div>
+            <p class="body-text">
+                Each service has its own privacy policy governing data collection and use. We recommend reviewing their policies:
+            </p>
+            <div class="bullet-text">Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" style="color: #667eea;">policies.google.com/privacy</a></div>
+            <div class="bullet-text">RevenueCat Privacy Policy: <a href="https://revenuecat.com/privacy" target="_blank" style="color: #667eea;">revenuecat.com/privacy</a></div>
+        </div>
 
-        <h2>6. Your Rights</h2>
-        <p>You have the right to access, update, or delete your personal information associated with your Google account. If you would like to request that we delete your account information or have any other inquiries regarding your personal data, please contact us at <strong>4bozzi@gmail.com</strong>.</p>
+        <!-- Account Deletion -->
+        <div class="section">
+            <h2 class="section-title">
+                <span class="material-icons">delete_forever</span>
+                Account Deletion
+            </h2>
+            <p class="body-text">
+                You have the right to delete your account and all associated data at any time. When you delete your account, we permanently remove:
+            </p>
+            <div class="bullet-text">Your profile and account information</div>
+            <div class="bullet-text">All tours you've created</div>
+            <div class="bullet-text">Your tour history and preferences</div>
+            <div class="bullet-text">Group memberships and data</div>
+            <div class="bullet-text">All app settings and stored data</div>
+            <div class="highlight-box">
+                <span class="material-icons">info</span>
+                <strong>How to Delete:</strong> Open the CurioCity app → Go to Profile → Tap "Delete Account" → Follow the confirmation steps.
+            </div>
+            <a href="mailto:support@curiocity.app?subject=Account%20Deletion%20Request" class="delete-button">
+                <span class="material-icons">delete</span>
+                Request Account Deletion
+            </a>
+        </div>
 
-        <h2>7. Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time. When we do, we will post the updated policy within the app and update the "Effective Date" at the top of this page. We encourage you to review this policy periodically to stay informed about how we protect your information.</p>
+        <!-- Contact -->
+        <div class="section">
+            <h2 class="section-title">
+                <span class="material-icons">contact_support</span>
+                Contact Us
+            </h2>
+            <p class="body-text">
+                If you have questions about this privacy policy or your data, please contact us:
+            </p>
+            <a href="mailto:support@curiocity.app?subject=Privacy%20Policy%20Inquiry" class="contact-button">
+                <span class="material-icons">email</span>
+                support@curiocity.app
+            </a>
+        </div>
 
-        <h2>8. Contact Us</h2>
-        <p>If you have any questions or concerns about this Privacy Policy or our practices, please contact us at:</p>
-        <p><strong>4bozzi@gmail.com</strong></p>
-        <p><strong>Apps of Nimh</strong></p>
-    </section>
+        <!-- Footer -->
+        <div class="footer">
+            <p>Last updated: <script>document.write(new Date().toLocaleDateString())</script></p>
+            <p style="margin-top: 16px;">© 2025 CurioCity. All rights reserved.</p>
+        </div>
+    </div>
 </body>
 </html>
